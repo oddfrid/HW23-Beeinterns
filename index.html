@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>BeeInterns#23 - JS Events - <a href="https://github.com/oddfrid" target="_blank" rel="noopener noreferrer">by  @oddfrid</a></h1>
+        <article class="about__hw">
+            <div class="hw-wrap">
+                <h2>About HW</h2>
+                <p>There are the list of heroes. Use arrows to browse one of them. Click on his name below image and scroll down to see info. Click 'OPEN IMAGE IN FULL SCREEN' button ('CLICK HERE!' if mouse over button) to open image in full screen(Use 'Esc' to come back).</p>
+                <p>I used 'click', 'scroll', 'mouseover/mouseout', 'fullscreenchange', 'toggle' events</p>
+            </div>
+        </article>
+    </header>
+    <main>
+        <section>
+            <article id="contant">
+                <h2>Choose your hero</h2>
+                <div class="list">
+                    <div><button id="move-left" class="left-btn"></button></div>
+                        <ul>
+                            <li class="card small dr">
+                                <figure>
+                                    <img src="img/hsKCzxe.jpg" alt="img1">
+                                    <figcaption>
+                                        <button id="dr" class="choose-btn">Dr. Strange</button>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="card middle ant">
+                                <figure>
+                                    <img src="img/dO0yQpu.jpg" alt="img2">
+                                    <figcaption>
+                                        <button id="ant" class="choose-btn">Ant-man</button>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="card big iron">
+                                <figure>
+                                    <img src="img/8enncLP.jpg" alt="img3">
+                                    <figcaption>
+                                        <button id="iron" class="choose-btn">Iron man</button>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="card middle pant">
+                                <figure>
+                                    <img src="img/Hykr7by.jpg" alt="img4">
+                                    <figcaption>
+                                        <button id="pant" class="choose-btn">Black panther</button>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="card small hulk">
+                                <figure>
+                                    <img src="img/NqyZ3ue.jpg" alt="img5">
+                                    <figcaption>
+                                        <button id="hulk" class="choose-btn">The Hulk</button>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    <div><button id="move-right" class="right-btn"></button></div>
+                </div>
+            </article>
+            <article class="about__hero">
+                <h2 class="hero-name"></h2>
+                <figure class="hero-profile">
+                    <img class="hero-img" src="">
+                    <figcaption class="hero-figc">
+                        <div class="fullscreen-btn-wrap">
+                            <button class="fullscreen-btn" hidden></button>
+                        </div>
+                        <p class="hero-info"></p>
+                    </figcaption>
+                </figure>
+            </article>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="./script/swipelist.js"></script>
+    <script src="./script/herosectionSwith.js"></script>
+    <script src="./script/scrolllToSee.js"></script>
+    <script src="./script/fullscreen.js"></script>
+    <script src="./script/mouseaction.js"></script>
+
+</body>
+</html>
