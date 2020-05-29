@@ -1,5 +1,9 @@
+import { FULLSCREEN_BTN, HERO_IMG } from './constants.js';
+
 const toFullScreen = () => {
-  document.querySelector('img[class*="hero-img"]').requestFullscreen();
+  HERO_IMG.requestFullscreen();
 };
 document.addEventListener('fullscreenchange', toFullScreen);
-document.querySelector('button[class*="fullscreen-btn"]').addEventListener('click', () => toFullScreen());
+document.removeEventListener('fullscreenchange', toFullScreen);
+FULLSCREEN_BTN.addEventListener('click', () => toFullScreen());
+FULLSCREEN_BTN.removeEventListener('click', () => toFullScreen());

@@ -1,9 +1,13 @@
+import { FULLSCREEN_BTN } from './constants.js';
+
 const changeFullScreenBtn = () => {
-  document.querySelector('button[class*="fullscreen-btn"]').innerText = 'CLICK HERE!';
+  FULLSCREEN_BTN.innerText = 'CLICK HERE!';
 };
 const returnFullScreenBtn = () => {
-  document.querySelector('button[class*="fullscreen-btn"]').innerText = 'Open image in fullscreen';
+  FULLSCREEN_BTN.innerText = 'Open image in fullscreen';
 };
 
-document.querySelector('button[class*="fullscreen-btn"]').addEventListener('mouseover', () => changeFullScreenBtn());
-document.querySelector('button[class*="fullscreen-btn"]').addEventListener('mouseout', () => returnFullScreenBtn());
+FULLSCREEN_BTN.addEventListener('mouseover', () => changeFullScreenBtn());
+FULLSCREEN_BTN.removeEventListener('mouseover', () => changeFullScreenBtn());
+FULLSCREEN_BTN.addEventListener('mouseout', () => returnFullScreenBtn());
+FULLSCREEN_BTN.removeEventListener('mouseout', () => returnFullScreenBtn());
